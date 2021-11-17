@@ -7,9 +7,12 @@ let searchResults = document.querySelector('#search-result');
 
 all.addEventListener('click', (e) => {
     e.preventDefault();
+  
+    if (!input.value) {
+        return;
+    }
+
     getSearchResult(e)
-
-
     document.querySelector("img").style.height = "45px"
     document.querySelector("img").style.width = "auto"
     document.querySelector("img").style.margin = "7px 10px 0 0"
