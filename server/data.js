@@ -50,7 +50,7 @@ const list = [
       url: 'https://www.cdc.gov/healthypets/pets/cats.html'
     },
     
-    
+
     {
       search: 'Funny dog video',
       description: 'Videos all about dogs and they are funny!',
@@ -72,6 +72,38 @@ const list = [
       url: 'https://www.dogstrust.org.uk/'
     }, 
     {
+      search: 'RSPCA - Dog Care Advice',
+      description: 'How to look after and care for a dog',
+      url: 'https://www.rspca.org.uk/adviceandwelfare/pets/dogs'
+    },
+    {
+      search: 'Battersea Dogs & Cats Home',
+      description: 'Battersea Is Here For Every Dog And Cat, And Has Been Since 1860. We Believe That Every Dog And Cat Deserves The Best.',
+      url: 'https://www.battersea.org.uk/'
+    },
+    {
+      search: 'Dogs for sale',
+      description: 'Dogs for Sale on Gumtree in the London Area',
+      url: 'https://www.gumtree.com/dogs/london'
+    },
+    {
+      search: 'CDC - Dogs',
+      description: 'Information from the CDC on Dogs',
+      url: 'https://www.cdc.gov/healthypets/pets/dogs.html'
+    },
+    {
+      search: 'Lost dog breeeds',
+      description: 'The eccentric dog breeds that vanished',
+      url: 'https://www.bbc.com/future/article/20211105-the-bizarre-dog-breeds-time-forgot'
+    },
+    {
+      search: 'All Dog Breeds',
+      description: 'All the dog breeds around the world',
+      url: 'https://dogtime.com/dog-breeds/profiles'
+    },
+
+
+    {
       search: 'Giraffe',
       description: 'Exploring the world of food is our passion. Our obsession.',
       url: 'https://www.giraffe.net/'
@@ -81,6 +113,8 @@ const list = [
       description: 'The giraffe (Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be ...',
       url: 'https://en.wikipedia.org/wiki/Giraffe'
     }, 
+
+
     {
       search: 'Penguin - Wikipedia',
       description: ' Penguins are a group of aquatic flightless birds. They live almost exclusively in the southern hemisphere: only one ...',
