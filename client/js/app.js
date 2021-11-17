@@ -39,13 +39,26 @@ async function getSearchResult(e) {
        
 }
 
+function getRadnomResult(){
+    const options = {
+        method: 'GET',
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }
+    fetch(`http://localhost:3000/random/`)
+        .then(r=>r.json())
+        .then(r=> r.url)
+        .then(r => window.open(r, '_blank')) //opens new tab
+        //.then(r => window.location.assign(r)) //redirects
+}
 
 all.addEventListener('click', (e) => {
     e.preventDefault();
     getSearchResult(e)
 })
 
-
+one.addEventListener('click', getRadnomResult)
 
 
 
