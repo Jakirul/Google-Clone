@@ -49,7 +49,8 @@ function getRadnomResult(){
     fetch(`http://localhost:3000/random/`)
         .then(r=>r.json())
         .then(r=> r.url)
-        .then(r => window.location = r)
+        .then(r => window.open(r, '_blank')) //opens new tab
+        //.then(r => window.location.assign(r)) //redirects
 }
 
 all.addEventListener('click', (e) => {
