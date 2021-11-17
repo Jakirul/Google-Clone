@@ -12,6 +12,12 @@ function getRandomLink () {
 
 router.get('/',(req,res) =>{
     const link = getRandomLink()
+    res.send(link);
+})
+
+//not used currently
+router.get('/go', (req,res) =>{
+    const link = getRandomLink();
     res.redirect(link.url);
 })
 

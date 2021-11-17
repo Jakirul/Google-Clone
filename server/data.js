@@ -2,13 +2,13 @@ const list = [
     {
       search: 'Cats Are Cool',
       description: 'This website is all about cats and cats are cool',
-      url: 'https://catsarecool.com'
+      url: 'https://en.wikipedia.org/wiki/Cat'
     },
     
     {
       search: 'Cats funny videos',
       description: 'Videos all about cats and they are funny!',
-      url: 'https://catsfunnyvideos.com'
+      url: 'https://en.wikipedia.org/wiki/Uk'
     },
     {
       search: 'I love cats',
@@ -18,7 +18,7 @@ const list = [
     {
       search: 'Funny dog video',
       description: 'Videos all about dogs and they are funny!',
-      url: 'https://dogfunnyvideos.com'
+      url: 'https://en.wikipedia.org/wiki/Dog'
     }
 ]
 
