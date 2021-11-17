@@ -1,8 +1,7 @@
 //function to show 10 search results
-async function getSearchResult(e) {
+async function getSearchResult() {
     const searchString = input.value;
     if(!searchString){
-        
         return
     }
     const search = await fetch(`http://localhost:3000/${searchString}`)
@@ -51,7 +50,7 @@ function getRandomResult(){
         //.then(r => window.location.assign(r)) //redirects
 }
 
-function getRandomSearchResult(e){
+function getRandomSearchResult(){
     if(!input.value){
         getRandomResult()
     }else{
@@ -62,4 +61,13 @@ function getRandomSearchResult(e){
             .then(r => window.open(r)) //opens new tab
             //.then(r => window.location.assign(r)) //redirects
     }
+}
+
+module.exports = {
+    getSearchResult,
+    appendResults,
+    makeTitle,
+    makeDescription,
+    getRadnomResult,
+    getRandomSearchResult
 }
