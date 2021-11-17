@@ -68,6 +68,6 @@ module.exports = {
     appendResults,
     makeTitle,
     makeDescription,
-    getRadnomResult,
+    getRandomResult,
     getRandomSearchResult
 }
