@@ -15,10 +15,5 @@ router.get('/',(req,res) =>{
     res.send(link);
 })
 
-//not used currently
-// router.get('/go', (req,res) =>{
-//     const link = getRandomLink();
-//     res.redirect(link.url);
-// })
 
 module.exports = router;

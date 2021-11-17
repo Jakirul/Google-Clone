@@ -18,6 +18,11 @@ This is a pair assignment which asked us to develop our own version of Google. T
 - Nodemon
 - Cors
 
+## Issues
+
+We have come across a lot of issues with coverage. For example, when we seperated the front end javascript files for modularity, coverage thought we weren't actually running the functions when we are. This gave us a score of 45%! We put them all back into one big file and we achieved a coverage of 85%.
+
+We figured using bundles would help but we couldn't figure out how to use all 3 files together.
 
 ## Images
 

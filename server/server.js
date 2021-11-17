@@ -14,11 +14,6 @@ app.get('/', (req, res) => {
     res.status(200).send(list)
 })
 
-app.post('/', (req, res) => {
-    const data = req.body;
-    res.status(200).send(data)
-})
-
 app.get('/:searchResult', (req, res) => {
     const searchTerm = [req.params.searchResult.toLowerCase()];
     
