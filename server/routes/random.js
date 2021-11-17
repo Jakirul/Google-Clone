@@ -7,7 +7,7 @@ const list = require('../data')
 
 
 function getRandomLink () {
-    return list[Math.floor(Math.random()*list.length)];
+    return list[0];
 }
 
 router.get('/',(req,res) =>{

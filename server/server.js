@@ -43,20 +43,4 @@ app.get('/:searchResult', (req, res) => {
     }
 });
 
-app.get('/:id', (req, res) => {
-
-    res.send("in search")
-//     //Holds value of the query param 'searchquery'.
-//       const searchQuery = req.params.id;
-//       console.log(searchQuery)
-  
-//     //Do something when the searchQuery is not null.
-//     if(searchQuery != null){
-//         res.send(`in the page: ${searchQuery}`)
-//     }else{
-//       res.end();
-//     }
-  });
-
-
 module.exports = app;
