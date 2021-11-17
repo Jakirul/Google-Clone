@@ -11,14 +11,12 @@ const randomPage = require('./routes/random')
 app.use('/random', randomPage);
 
 app.get('/', (req, res) => {
-    res.send(list)
-    // res.sendFile((path.join(__dirname, '../client/index.html')))
-
+    res.status(200).send(list)
 })
 
 app.post('/', (req, res) => {
     const data = req.body;
-    res.status(201).send(data)
+    res.status(200).send(data)
 })
 
 app.get('/:searchResult', (req, res) => {
@@ -35,12 +33,12 @@ app.get('/:searchResult', (req, res) => {
         return findWords[0] !== null;
     });
 
-
     if (results.length){
         res.send(results);
     } else {
         res.status(404).send({error: `No results found for ${searchTerm}`})
     }
 });
+
 
 module.exports = app;
