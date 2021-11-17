@@ -1,10 +1,3 @@
-const input = document.querySelector("#search");
-const button = document.querySelector(".getAll")
-const form = document.querySelector("form");
-const one = document.querySelector(".one");
-const all = document.querySelector(".all");
-const searchResults = document.querySelector('#search-result');
-
 //function to show 10 search results
 async function getSearchResult(e) {
     const searchString = input.value;
@@ -20,45 +13,36 @@ async function getSearchResult(e) {
             h1.textContent = `${data.error}`
             searchResults.append(h1)
     } else {
-        data.forEach(response => {
-            //adding website name to search results
-            const title = document.createElement("a");
-            title.textContent = `${response.search}`
-            title.setAttribute("href", `${response.url}`);
-            
-            searchResults.append(title);
-            
-            //adding website info to search results
-            const description = document.createElement("p");
-            description.textContent = `${response.description}`
-            searchResults.append(description);
-    
-    
-        })
-    }
-       
+        appendResults(data)
+    }      
+}
+
+function appendResults(data){
+    data.forEach(r => {        
+        searchResults.append(makeTitle(r.search, r.url));
+        searchResults.append(makeDescription(r.description))
+    })
+}
+
+function makeTitle(search, url){
+    //adding website name to search results
+    const title = document.createElement("a");
+    title.textContent = `${search}`
+    title.setAttribute("href", `${search}`);
+    return title;
+}
+
+function makeDescription(desc){
+    //adding website info to search results
+    const description = document.createElement("p");
+    description.textContent = `${desc}`
+    return description;
 }
 
 function getRadnomResult(){
-    const options = {
-        method: 'GET',
-        headers: {
-            "Content-Type": "application/json"
-        }
-    }
     fetch(`http://localhost:3000/random/`)
         .then(r=>r.json())
         .then(r=> r.url)
         .then(r => window.open(r, '_blank')) //opens new tab
         //.then(r => window.location.assign(r)) //redirects
 }
-
-all.addEventListener('click', (e) => {
-    e.preventDefault();
-    getSearchResult(e)
-})
-
-one.addEventListener('click', getRadnomResult)
-
-
-
