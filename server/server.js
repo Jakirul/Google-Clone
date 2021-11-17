@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.status(200).send(list)
 })
 
+app.post('/', (req, res) => {
+    res.status(404).send('Not allowed')
+})
+
 app.get('/:searchResult', (req, res) => {
     const searchTerm = [req.params.searchResult.toLowerCase()];
     

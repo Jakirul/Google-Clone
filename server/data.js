@@ -119,7 +119,7 @@ const list = [
       search: 'Penguin - Wikipedia',
       description: ' Penguins are a group of aquatic flightless birds. They live almost exclusively in the southern hemisphere: only one ...',
       url: 'https://en.wikipedia.org/wiki/Penguin'
-    }, 
+    }
 
 ]
 

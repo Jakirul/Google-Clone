@@ -15,5 +15,4 @@ router.get('/',(req,res) =>{
     res.send(link);
 })
 
-
 module.exports = router;
