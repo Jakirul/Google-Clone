@@ -22,6 +22,7 @@ async function getSearchResult(e) {
     } else {
         data.forEach(response => {
             //adding website name to search results
+           
             const title = document.createElement("a");
             title.textContent = `${response.search}`
             title.setAttribute("href", `${response.url}`);
@@ -56,6 +57,16 @@ function getRadnomResult(){
 all.addEventListener('click', (e) => {
     e.preventDefault();
     getSearchResult(e)
+    document.querySelector("img").style.height = "45px"
+    document.querySelector("img").style.width = "auto"
+    document.querySelector("img").style.margin = "7px 10px 0 0"
+    document.querySelector("section").style.flexDirection = "row";
+    document.querySelector("section").style.justifyContent = "left"
+    document.querySelector("section").style.marginTop = "10px"
+    document.querySelector("section").style.alignItems = "flex-start"
+    document.querySelector("section").style.height = "auto"
+    searchResults.style.marginTop = "10px"
+    searchResults.style.marginLeft = "9em"
 })
 
 one.addEventListener('click', getRadnomResult)
