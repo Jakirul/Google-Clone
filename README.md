@@ -19,8 +19,12 @@ This is a pair assignment which asked us to develop our own version of Google. T
 
 
 ## Images
+
+#### The Home Page
 ![Home page](https://i.gyazo.com/07b68afcd250d4d40f950af882dd8c7f.png)
 
+#### Search results
 ![Search result](https://i.gyazo.com/d046e9f25cdd9b83b14fc59b38bf967d.png)
 
+#### Search result when no results are found
 ![No result found](https://i.gyazo.com/c8f0fb09e3de60803e42b091eaeed4b9.png)
