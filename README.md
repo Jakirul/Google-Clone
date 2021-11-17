@@ -13,6 +13,7 @@ This is a pair assignment which asked us to develop our own version of Google. T
 ## Technologies
 - HTML/CSS
 - JavaScript
+- Node / Express.js
 - Jest / Coverage
 - Nodemon
 - Cors
