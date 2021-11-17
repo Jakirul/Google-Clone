@@ -32,7 +32,7 @@ function makeTitle(search, url){
     //adding website name to search results
     const title = document.createElement("a");
     title.textContent = `${search}`
-    title.setAttribute("href", `${search}`);
+    title.setAttribute("href", `${url}`);
     return title;
 }
 

@@ -1,20 +1,56 @@
 const list = [
     {
-      search: 'Cats Are Cool',
+      search: 'Cats - Wikipedia',
       description: 'Wikipedia of cat',
       url: 'https://en.wikipedia.org/wiki/Cat'
     },
-    
     {
       search: 'Cats funny videos',
       description: 'Videos all about cats and they are funny!',
       url: 'https://www.youtube.com/watch?v=pqbBvaBncJs'
     },
     {
-      search: 'I love cats',
-      description: 'lol joke',
-      url: 'https://cats.com'
+      search: 'Funny Cats and Kittens Meowing Compilation',
+      description: 'Here is a video if cats and kittens meowing to confuse your pets',
+      url: 'https://www.youtube.com/watch?v=DXUAyRRkI6k'
     },
+    {
+      search: 'Cats Protection',
+      description: 'We are \UK\'s leading cat charity. As a feline welfare charity, we help 200000 cats and kittens every year.',
+      url: 'https://www.cats.org.uk/'
+    },
+    {
+      search: 'Cats',
+      description: 'IMDB Link of Cats the movie',
+      url: 'https://www.imdb.com/title/tt5697572/'
+    },
+    {
+      search: 'CATS International',
+      description: 'Cats education',
+      url: 'https://www.catseducation.com/'
+    },
+    {
+      search: 'Cats the Musical',
+      description: 'Andrew Lloyd Webbers record-breaking, award-winning, family favourite West End and Broadway musical CATS - book your tickets today!',
+      url: 'https://www.catsthemusical.com/'
+    },
+    {
+      search: 'RSPCA - Cats Care Tips',
+      description: 'Caring for cats and kittens',
+      url: 'https://www.rspca.org.uk/adviceandwelfare/pets/cats'
+    },
+    {
+      search: 'Why do we think cats are unfriendly?',
+      description: 'Cats are the only asocial animal we have successfully domesticated. We’re disappointed that we don’t bond with them as easily as dogs. But are we just missing the signs?',
+      url: 'https://www.bbc.com/future/article/20191024-why-do-we-think-cats-are-unfriendly'
+    },
+    {
+      search: 'Cats - CDC',
+      description: 'Information from the CDC (Centers for Disease Control and Prevention) about Cats',
+      url: 'https://www.cdc.gov/healthypets/pets/cats.html'
+    },
+    
+    
     {
       search: 'Funny dog video',
       description: 'Videos all about dogs and they are funny!',
