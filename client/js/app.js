@@ -32,7 +32,7 @@ function makeTitle(search, url){
     //adding website name to search results
     const title = document.createElement("a");
     title.textContent = `${search}`
-    title.setAttribute("href", `${search}`);
+    title.setAttribute("href", `${url}`);
     return title;
 }
 
@@ -59,6 +59,7 @@ function getRandomSearchResult(e){
             .then(r=>r.json())
             .then(r => r[Math.floor(Math.random()*r.length)])
             .then(r=> r.url)
-            .then(r => window.open(r,'_blank'))
+            .then(r => window.open(r)) //opens new tab
+            //.then(r => window.location.assign(r)) //redirects
     }
 }

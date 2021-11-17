@@ -16,9 +16,9 @@ router.get('/',(req,res) =>{
 })
 
 //not used currently
-router.get('/go', (req,res) =>{
-    const link = getRandomLink();
-    res.redirect(link.url);
-})
+// router.get('/go', (req,res) =>{
+//     const link = getRandomLink();
+//     res.redirect(link.url);
+// })
 
 module.exports = router;
