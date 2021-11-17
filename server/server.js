@@ -15,8 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    const data = req.body;
-    res.status(200).send(data)
+    res.status(404).send('Not allowed')
 })
 
 app.get('/:searchResult', (req, res) => {
