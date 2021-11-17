@@ -26,6 +26,11 @@ describe('app', () => {
             test('it exists', () =>{
                 expect(app.getSearchResult).toBeTruthy()
             }) 
+
+            // test('gets stuff from /', () =>{
+            //     app.getSearchResult();
+            //     expect(fetch.mock.calls[0][1]).toMatch(/list$/)
+            // })
         })
 
         describe('getRandomSearchResult', () =>{
