@@ -1,6 +1,9 @@
 //function to show 10 search results
 async function getSearchResult(e) {
     const searchString = input.value;
+    if(!searchString){
+        return
+    }
     const search = await fetch(`http://localhost:3000/${searchString}`)
     const data = await search.json()
            
