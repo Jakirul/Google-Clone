@@ -8,10 +8,13 @@ let searchResults = document.querySelector('#search-result');
 all.addEventListener('click', (e) => {
     e.preventDefault();
     if(!input.value){
-        return
+        return;
     }
     getSearchResult(e);
     stylingBodyOnSearch();
 })
 
-one.addEventListener('click', getRadnomResult)
+one.addEventListener('click', (e) => {
+    e.preventDefault();
+    getRandomSearchResult(e)
+})

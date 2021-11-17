@@ -50,3 +50,15 @@ function getRadnomResult(){
         .then(r => window.open(r, '_blank')) //opens new tab
         //.then(r => window.location.assign(r)) //redirects
 }
+
+function getRandomSearchResult(e){
+    if(!input.value){
+        getRadnomResult()
+    }else{
+        fetch(`http://localhost:3000/${input.value}`)
+            .then(r=>r.json())
+            .then(r => r[Math.floor(Math.random()*r.length)])
+            .then(r=> r.url)
+            .then(r => window.open(r,'_blank'))
+    }
+}
