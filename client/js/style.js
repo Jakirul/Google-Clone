@@ -9,4 +9,11 @@ function stylingBodyOnSearch(){
     document.querySelector("section").style.height = "auto"
     searchResults.style.marginTop = "10px"
     searchResults.style.marginLeft = "9em"
+
+    const img = document.querySelector("img");
+    img.style.cursor = "pointer"
+    img.addEventListener('click', () => {
+        location.reload()
+        
+    })
 }

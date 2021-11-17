@@ -5,7 +5,7 @@
 const { TestWatcher } = require('@jest/core');
 const fs = require('fs');
 const path = require('path');
-const { getRadnomResult } = require('../js/app.js');
+const { getRandomResult } = require('../js/app.js');
 const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
 
 global.fetch = require('jest-fetch-mock');
@@ -35,7 +35,7 @@ describe('app', () => {
 
         describe('getRandomSearchResult', () =>{
             test('it exists', () =>{
-                expect(app.getRadnomResult).toBeTruthy()
+                expect(app.getRandomResult).toBeTruthy()
             })
         })
     })

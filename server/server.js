@@ -24,7 +24,7 @@ app.get('/:searchResult', (req, res) => {
     const results = list.filter(item => {
         const title = item.search.toLowerCase();
         const findWords = searchTerm.map(term => {
-            // This conerts it to /search term here/
+            // This converts it to /search term here/
             let myPattern = new RegExp(`${term}`);
             return title.match(myPattern);
         });

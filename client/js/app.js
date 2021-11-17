@@ -42,7 +42,7 @@ function makeDescription(desc){
     return description;
 }
 
-function getRadnomResult(){
+function getRandomResult(){
     fetch(`http://localhost:3000/random/`)
         .then(r=>r.json())
         .then(r=> r.url)
@@ -52,7 +52,7 @@ function getRadnomResult(){
 
 function getRandomSearchResult(){
     if(!input.value){
-        getRadnomResult()
+        getRandomResult()
     }else{
         fetch(`http://localhost:3000/${input.value}`)
             .then(r=>r.json())
@@ -68,6 +68,6 @@ module.exports = {
     appendResults,
     makeTitle,
     makeDescription,
-    getRadnomResult,
+    getRandomResult,
     getRandomSearchResult
 }
