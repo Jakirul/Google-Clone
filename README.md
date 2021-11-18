@@ -10,6 +10,12 @@ This is a pair assignment which asked us to develop our own version of Google. T
 - To run the tests, type `npm test`
 - To see the coverage, type `npm run coverage`
 
+## Search results available:
+- cat / cats
+- dog / dogs
+- giraffe 
+- penguin
+
 ## Technologies
 - HTML/CSS
 - JavaScript
