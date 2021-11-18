@@ -34,3 +34,47 @@ We figured using bundles would help but we couldn't figure out how to use all 3 
 
 #### Search result when no results are found
 ![No result found](https://i.gyazo.com/c8f0fb09e3de60803e42b091eaeed4b9.png)
+
+## Files
+
+## Client side
+### apps.js
+- Contains front end functions
+- getSearchResult returns a list of results
+- getRandomSearchResult redirects to a random page of the search results
+-   appendResults , makeTitle, makeDescription and getRandomResults are helper functions
+
+### index.js
+- Event listeners
+
+### style.js
+- Changes the layout of the page upon searching
+
+### index.html
+- Basic html structure of website
+
+### style.css
+- Styling of website
+
+## Server side
+### random.js
+- Router for fetching a random link
+
+### data.js
+- Database
+
+### index.js
+- Starts the server
+
+### server.js
+- Server functionality
+
+## Testing
+### app.test.js
+- Tests front end functionality
+
+### layout.test.js
+- Tests layout of webpage
+
+### api.spec.js
+- Tests api functionality
